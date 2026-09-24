@@ -97,7 +97,7 @@ const PropertyList: NextPage = ({ initialInput, ...props }: any) => {
 	const sortingHandler = (e: React.MouseEvent<HTMLLIElement>) => {
 		switch (e.currentTarget.id) {
 			case 'new':
-				setSearchFilter({ ...searchFilter, sort: 'createdAt', direction: Direction.ASC });
+				setSearchFilter({ ...searchFilter, sort: 'createdAt', direction: Direction.DESC });
 				setFilterSortName('New');
 				break;
 			case 'lowest':
