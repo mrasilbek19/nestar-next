@@ -513,7 +513,7 @@ const PropertyDetail: NextPage = ({ initialComment, ...props }: any) => {
 									<Box className={'submit-btn'} component={'div'}>
 										<Button
 											className={'submit-review'}
-											disabled={insertCommentData.commentContent === '' || user?._id === ''}
+											disabled={insertCommentData.commentContent === ''}
 											onClick={createCommentHandler}
 										>
 											<Typography className={'title'}>Submit Review</Typography>
